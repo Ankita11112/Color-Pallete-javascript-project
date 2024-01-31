@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+}
+
+.light-mode{
+  color:#130039;
+  /* background-color: rgb(221, 254, 254); */
+  background-image: linear-gradient(rgb(195, 253, 253), white, rgb(185, 255, 255) );
+}
+
+.dark-mode{
+  color:rgb(163, 252, 252);
+  /* background-color:#273c7a ; */
+  background-image: linear-gradient(to right, #191e27 0%, #255e78 51%, #151d2a 100%);
+}
+
+#modes{
+  position: absolute;
+  left:2rem;  
+  top: 2rem;
+  font-size: 1.2rem;
+}
+
+h1{
+  margin-top: 25px;
+  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+}
+
+.box{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height:52vh;
+    width: 25.5vw;
+    background-color: rgb(82, 103, 237);
+    margin-top: 48px;
+}                     
+.btn-group{
+  margin-bottom: 40px;
+}
+
+.btn-group button{
+  border: 1px inset transparent;
+  border-radius: 10px;
+  height: 5rem;
+  width: 12vw;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color:#1e3a8f;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn-group button:active{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #2a2675;
+}  
+
+#b1{
+  margin-right: 18px;
+}
+
+.choice{
+  position: absolute;
+  right: 1.2rem;
+  top: 3rem;
+  border:1px solid transparent;
+  height: 90vh;
+  width: 25vw;
+}
+
+.choice h2{
+  font-size: 41px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-shadow: 0px 0px 0 #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 13px 13px 0 #182B64, 14px 14px 0 #0F225B, 15px 15px 0 #071A53, 16px 16px 0 #02114A, 17px 17px 0 #0B0841, 18px 18px 0 #130039, 19px 19px 0 #1C0930, 20px 20px 0 #251227, 21px 21px 20px rgba(0,0,0,1), 21px 21px 1px rgba(0,0,0,0.5), 0px 0px 20px rgba(0,0,0,.2);
+}
+
+.container{
+  margin-top: 77px;
+  border: 2px solid transparent;
+  height: 70vh;
+}
+
+.cell{
+  border: 1px solid transparent;
+  height: 5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+.cell:hover{
+  border:5px groove rgb(95, 252, 255);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.cell i:hover{
+  color: #84ff54;
+}
+
+.cell #removed:hover{
+  color: #ff5d17;
+}
+
+
+
+
+
+
+
+
